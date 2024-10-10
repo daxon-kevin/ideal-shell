@@ -1,3 +1,42 @@
+sti
+jmp [esi]
+rcl ah,2
+lodsw
+lock
+mov rax,58
+mov cx,cx
+nop
+div cl
+test bl,14
+call [edx]
+rcl edx,5
+mov ecx,51
+neg esi
+ret
+call [ebx]
+imul dh
+jmp [edx]
+jmp [edx]
+sar rcx,7
+cmp dx,dx
+call [esi]
+cld
+cwd
+jmp [ebp]
+cmp dl,cl
+ret
+sbb esi,77
+lodsw
+shl rcx,7
+sal ecx,6
+call [ecx]
+jmp [ecx]
+scasw
+sub rbx,62
+call [ebx]
+mov [eax],edi
+call [ebx]
+
 adc [rbx],rcx
 sbb rbx,rdx
 dec rsi

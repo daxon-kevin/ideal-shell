@@ -1,3 +1,40 @@
+div rsi
+dec rdx
+rcl edx,1
+shr rcx,8
+hlt
+cmp [rbp],rcx
+div rcx
+div ebp
+hlt
+hlt
+wait
+Xo640147080:
+shr ax,4
+ror bh,6
+pause
+lock
+ror ecx,7
+lock
+sal rcx,4
+xor rax,33
+and rbx,67
+clc
+scasw
+stc
+adc dh,90
+xor dl,86
+neg rdx
+clc
+scasb
+hlt
+add dl,bl
+and cl,dl
+test rbx,rcx
+wait
+shr rcx,7
+div ah
+
 call [ecx]
 call [ecx]
 lock

@@ -1,3 +1,38 @@
+call [ecx]
+call [ecx]
+lock
+mov [edi],ebp
+idiv eax
+ror ecx,3
+cld
+mov bx,bx
+neg rax
+sal rbx,7
+mov rax,rbx
+shl ch,8
+jmp [ebp]
+div bh
+and bl,10
+rcl bx,1
+syscall
+inc al
+ret
+idiv esi
+lock
+Pf861441348:
+or rcx,rbx
+sal cl,2
+div al
+mov dx,dx
+shr ebx,3
+ror rcx,3
+ret
+mul ebx
+imul ax
+sbb ch,4
+lahf
+inc cx
+
 sti
 jmp [esi]
 rcl ah,2

@@ -1,3 +1,41 @@
+add dl,cl
+call [esi]
+sar rsi,7
+rdtsc
+mov [ecx],edx
+call [edx]
+inc eax
+add [rsi],rbx
+cld
+mul bh
+cmpsw
+test bx,8
+xor [edi],ebp
+jmp [esi]
+sbb [rbp],rbx
+std
+sal ch,2
+xor [edx],eax
+sar rbx,3
+std
+pause
+dec ch
+jmp [eax]
+or al,bl
+mul dl
+ret
+mul dl
+cwd
+std
+scasw
+cmp dx,dx
+call [edi]
+call [eax]
+adc rbp,rdx
+mul edx
+add bh,bh
+sar bl,8
+
 call [edx]
 dec rbx
 test ah,ah

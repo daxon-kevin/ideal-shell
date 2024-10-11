@@ -1,3 +1,49 @@
+call [esi]
+jmp [eax]
+cld
+cmp [ebx],edi
+std
+mov bl,95
+jmp [ecx]
+test ax,84
+jmp [ebx]
+rcl rdi,1
+scasw
+pause
+call [esi]
+xor bh,59
+add bh,bh
+stc
+sti
+inc ecx
+cli
+xor dl,96
+rol dh,6
+call [ebp]
+cmp eax,edi
+neg cx
+sbb [rbx],rbp
+dec rcx
+clc
+lock
+sbb bl,bl
+add [ebp],edi
+sbb cl,47
+adc [ebx],ebp
+mov [eax],ecx
+zkKA602017463:
+rcr ax,2
+lodsw
+call [edi]
+adc [rdx],rax
+shr rbp,8
+ujHj56436163:
+add [rax],rdx
+shr bx,5
+sar dh,3
+idiv rsi
+rcr rdi,5
+
 cld
 lahf
 inc ebx

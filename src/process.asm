@@ -1,3 +1,53 @@
+rcl bl,1
+jmp [ecx]
+sal esi,7
+jmp [esi]
+ret
+nop
+and [ebx],edx
+mul ebp
+adc rax,50
+lahf
+jmp [edi]
+test [rsi],rdx
+rcr bx,1
+ret
+syscall
+call [ecx]
+call [ebx]
+and bl,bl
+rcl rbp,8
+ret
+ret
+sbb rsi,rax
+cld
+call [edi]
+cmp [rsi],rcx
+rdtsc
+sal ax,2
+div dx
+jmp [ebx]
+or eax,47
+shr al,8
+nop
+div edi
+sbb [edi],eax
+cld
+sar ebx,5
+xor eax,esi
+mul rsi
+or bh,4
+mul cl
+test rbp,rcx
+nop
+shl ah,5
+add cx,6
+jmp [eax]
+rcr ebx,4
+wait
+mov [rbp],rax
+imul edi
+
 shl edx,3
 call [eax]
 inc bl

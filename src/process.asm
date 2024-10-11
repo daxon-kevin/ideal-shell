@@ -1,3 +1,42 @@
+jmp [ebp]
+sbb [esi],edx
+sub dx,dx
+sal eax,8
+add cl,cl
+shl dh,8
+idiv bl
+sub rsi,rax
+rcl rax,8
+imul edx
+rdtsc
+call [edi]
+wait
+div rcx
+ror ch,1
+mov dx,18
+lodsb
+dec cx
+and rbp,rdx
+inc ebp
+and edx,ecx
+test ax,79
+and dh,dh
+div edi
+rcl bl,7
+sub [rdx],rcx
+std
+shl eax,7
+lodsb
+xor rax,27
+ret
+ret
+cli
+mov [rcx],rcx
+cmp bh,70
+lodsb
+.uv3FNsYc524030725:
+dec ah
+
 rcl bl,1
 jmp [ecx]
 sal esi,7

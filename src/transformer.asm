@@ -1,3 +1,51 @@
+shr cx,3
+call [edx]
+ret
+idiv ah
+imul ch
+neg cl
+test dx,64
+sal ah,5
+test [rsi],rax
+rcl rbx,3
+lodsw
+rol bx,7
+cld
+neg ebp
+xor [ecx],edx
+mov [esi],ecx
+scasb
+ret
+ror al,5
+shl rbp,3
+jmp [ebx]
+lodsw
+mov [eax],esi
+hlt
+rcr al,8
+scasb
+call [eax]
+sbb [edi],edi
+rol rcx,7
+inc edx
+stc
+shl rdi,3
+shr dx,1
+call [ebp]
+cmp rcx,rcx
+inc rsi
+scasw
+jmp [edx]
+call [eax]
+and bh,1
+sar dh,3
+rcr rdx,2
+shr cx,8
+sal rbx,7
+pause
+shr cl,4
+lodsw
+
 jmp [ebx]
 jmp [ebp]
 neg ecx
@@ -103,7 +151,6 @@ imul ax
 sbb ch,4
 lahf
 inc cx
-
 sti
 jmp [esi]
 rcl ah,2

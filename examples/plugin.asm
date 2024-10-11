@@ -1,3 +1,30 @@
+cld
+lahf
+inc ebx
+lodsb
+hlt
+test rax,rsi
+call [edi]
+ret
+sbb ch,ch
+cmp rcx,rax
+jmp [ebx]
+ror rsi,1
+mul bl
+sbb [ecx],esi
+ror ch,3
+xor cx,cx
+neg rdi
+ret
+nop
+or dl,61
+idiv rbp
+rcl ebx,1
+test ah,ch
+rol dl,4
+sar rax,5
+or cx,62
+
 add dl,cl
 call [esi]
 sar rsi,7

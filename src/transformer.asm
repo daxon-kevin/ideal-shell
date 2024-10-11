@@ -1,3 +1,37 @@
+jmp [ebx]
+jmp [ebp]
+neg ecx
+cld
+dec dl
+shr rdi,8
+scasw
+test bx,11
+adc [ecx],esi
+cmp bx,bx
+ret
+clc
+rcl rdx,6
+rol ch,7
+sar rcx,6
+xor ch,12
+shr rdi,3
+idiv dl
+shl cx,6
+hlt
+jmp [edi]
+idiv cx
+adc bl,bl
+jmp [ecx]
+cld
+sbb [ebx],ebx
+mul bl
+shr ebx,8
+mov dl,dl
+idiv rdi
+and eax,ecx
+dec rdi
+sar esi,1
+
 div rsi
 dec rdx
 rcl edx,1

@@ -1,3 +1,31 @@
+jmp [edx]
+pause
+wait
+and rax,rcx
+shr ecx,2
+mov bh,dh
+scasw
+and ax,ax
+jmp [ebp]
+wait
+call [edx]
+rcr edx,7
+call [edi]
+ret
+lock
+ret
+div edx
+Jy7jC659775592:
+nop
+and ah,33
+cli
+sub [rsi],rbp
+mov ax,25
+div dx
+shl ebx,5
+dec ebx
+ret
+
 shr cx,3
 call [edx]
 ret

@@ -1,3 +1,32 @@
+dec al
+test cl,cl
+and [eax],ecx
+lodsb
+inc al
+inc rbx
+test cx,cx
+cli
+add [ecx],eax
+jmp [eax]
+xor bl,94
+dec bh
+call [ebp]
+and [ecx],edi
+clc
+rcr dh,4
+shl ch,3
+cmpsw
+std
+idiv bx
+shr bl,6
+dec rbx
+std
+pause
+lodsb
+lock
+pause
+stc
+
 call [esi]
 jmp [eax]
 cld
@@ -43,7 +72,6 @@ shr bx,5
 sar dh,3
 idiv rsi
 rcr rdi,5
-
 cld
 lahf
 inc ebx

@@ -1,3 +1,30 @@
+div bx
+call [esi]
+neg ax
+sub ax,73
+wait
+shl edi,2
+stc
+call [ebx]
+shr ch,2
+mov rax,57
+adc al,61
+cmpsw
+sub ax,86
+test dh,35
+pause
+mov rbp,rbp
+ret
+nop
+std
+call [ecx]
+inc dh
+cmp bh,87
+imul al
+idiv dx
+or al,al
+wait
+
 jmp [ebp]
 sbb [esi],edx
 sub dx,dx

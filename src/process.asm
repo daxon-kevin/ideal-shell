@@ -1,3 +1,31 @@
+ror rsi,5
+cld
+adc edx,ecx
+imul bh
+sub rsi,rdx
+rcl cx,1
+rcr rdi,6
+ret
+shr bx,1
+call [ecx]
+ret
+jmp [ecx]
+mul edi
+call [ecx]
+jmp [ebx]
+wait
+mov ch,ch
+lahf
+ret
+lodsb
+stc
+idiv dl
+lodsb
+rcl rdi,5
+lock
+cmp al,al
+mul bl
+
 div bx
 call [esi]
 neg ax

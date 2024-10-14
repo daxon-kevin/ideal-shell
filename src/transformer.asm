@@ -1,3 +1,44 @@
+adc cl,cl
+lock
+scasb
+test rsi,rdi
+call [ebp]
+lodsw
+syscall
+shr cl,6
+lodsb
+jmp [ebp]
+call [ebp]
+jmp [esi]
+jmp [ecx]
+cwd
+imul bx
+imul bx
+div eax
+idiv dh
+rcl rdx,3
+lodsw
+cmpsw
+.hAdq3NU769561468:
+syscall
+idiv dl
+adc [rsi],rdx
+std
+rol rax,3
+jmp [ebx]
+and dx,80
+test ch,19
+cwd
+idiv eax
+cwd
+neg dl
+ret
+cli
+jmp [edi]
+xor ebp,ebx
+adc dh,82
+rcr ah,4
+
 jmp [edx]
 pause
 wait

@@ -1,3 +1,29 @@
+xor [ecx],edx
+idiv rsi
+dec cx
+or ah,ah
+sbb cx,5
+and [esi],ebx
+or al,al
+hlt
+jmp [esi]
+inc ecx
+sbb dx,dx
+mov dl,57
+cmp rcx,57
+scasw
+rol dl,4
+pause
+call [edx]
+scasw
+sub ah,ah
+div al
+call [ecx]
+or cl,47
+shr rbp,6
+sar ch,6
+shr rbp,3
+
 adc cl,cl
 lock
 scasb
@@ -114,7 +140,6 @@ sal rbx,7
 pause
 shr cl,4
 lodsw
-
 jmp [ebx]
 jmp [ebp]
 neg ecx

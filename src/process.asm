@@ -1,3 +1,48 @@
+adc rcx,rdx
+imul ch
+ret
+lock
+sbb bh,dh
+ROC84686561:
+wait
+and [ecx],esi
+shr rcx,6
+test rax,rdi
+jmp [edx]
+and bx,bx
+scasb
+call [ebx]
+shr ch,5
+cmp al,96
+add [ecx],ebx
+.DwlmP6773338771:
+adc dx,58
+sub ebp,95
+nop
+or edx,32
+rcr bl,2
+sti
+hlt
+.bw2830807047:
+sub [rbx],rbp
+pause
+jmp [esi]
+dec cl
+lodsb
+lodsw
+lodsw
+lodsb
+imul rbp
+sub [esi],edx
+adc edi,edx
+add [rax],rax
+adc [edi],esi
+cld
+cli
+sbb bh,78
+imul edi
+jmp [eax]
+
 ror rsi,5
 cld
 adc edx,ecx
@@ -52,7 +97,6 @@ imul al
 idiv dx
 or al,al
 wait
-
 jmp [ebp]
 sbb [esi],edx
 sub dx,dx

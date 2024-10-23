@@ -1,3 +1,39 @@
+cli
+sal bl,7
+inc eax
+sti
+dec dx
+rol ebx,1
+jmp [ecx]
+clc
+sub [rax],rdi
+sbb ch,ch
+dec edx
+mul bx
+ret
+sbb cx,cx
+lock
+imul bh
+sub bx,bx
+pause
+rcl edx,1
+idiv al
+ret
+.kPHs6Cqf8q763923632:
+call [edi]
+call [esi]
+syscall
+scasb
+shr ax,5
+cli
+and [rdx],rax
+add al,78
+sal bl,3
+cwd
+xor rbp,50
+jmp [eax]
+scasw
+
 dec al
 test cl,cl
 and [eax],ecx

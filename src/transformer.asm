@@ -1,3 +1,39 @@
+test ebx,64
+rol bx,5
+jmp [ebp]
+hlt
+adc edi,45
+or bh,16
+mul edx
+sub [eax],edx
+shr rdx,3
+sti
+jmp [ecx]
+shr rcx,6
+sbb [ecx],esi
+ret
+idiv ax
+lahf
+and rbp,rbx
+call [eax]
+jmp [ecx]
+inc rcx
+lock
+sal rsi,8
+std
+or ch,ch
+jmp [esi]
+clc
+sar ebx,1
+ror rax,6
+syscall
+rol cl,2
+sbb [ebx],eax
+dec bx
+imul rcx
+adc [rdi],rcx
+std
+
 xor [ecx],edx
 idiv rsi
 dec cx

@@ -1,3 +1,44 @@
+adc [rbp],rcx
+clc
+call [ebp]
+scasw
+cli
+rcr dx,4
+test cx,cx
+rol al,8
+sub ecx,99
+wait
+jmp [edx]
+lodsb
+.IWjNt737373300:
+inc edx
+ret
+sbb al,al
+and esi,16
+rol rdi,6
+sar rdi,4
+test ebx,88
+syscall
+call [esi]
+sti
+test [rdi],rbp
+syscall
+ret
+scasw
+OQT370487205:
+mul rbp
+std
+xor rsi,80
+lodsw
+mov al,59
+div rbx
+sbb dl,al
+stc
+rdtsc
+hlt
+and ch,ch
+sub cx,2
+
 adc rcx,rdx
 imul ch
 ret

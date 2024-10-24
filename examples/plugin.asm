@@ -1,3 +1,45 @@
+.sGwRzq8q620139218:
+cld
+ret
+imul bl
+rdtsc
+ret
+hlt
+scasb
+shl edx,7
+test rax,rcx
+nop
+add edi,edi
+sbb [rbp],rbx
+cmp bl,75
+mul rsi
+stc
+dec rax
+test [rdx],rcx
+sar rcx,8
+and cl,cl
+shr dx,5
+imul rbx
+call [edx]
+mov [rdx],rsi
+cmpsw
+shl ebx,1
+scasw
+neg ch
+hlt
+clc
+syscall
+neg dx
+idiv rbp
+rcr dl,3
+call [ebx]
+lodsw
+lodsb
+div ebp
+imul bx
+mul ax
+lock
+
 cli
 sal bl,7
 inc eax

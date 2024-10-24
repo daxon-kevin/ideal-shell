@@ -1,3 +1,29 @@
+jmp [edx]
+lahf
+syscall
+call [ebp]
+call [esi]
+adc [rdx],rbp
+ror ch,3
+rol ebx,1
+syscall
+sub [rbx],rax
+rcr ch,1
+call [esi]
+neg ebx
+ret
+rcl cx,6
+and ebx,81
+rol rsi,4
+imul bh
+cld
+call [ecx]
+ror ebx,2
+shl ebx,3
+RFJ6700737746:
+jmp [ecx]
+test dx,dx
+
 inc bl
 add cx,30
 ror rax,4

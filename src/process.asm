@@ -1,3 +1,29 @@
+cld
+adc cl,cl
+shr ecx,8
+idiv ebp
+jmp [edi]
+syscall
+or [eax],edi
+div ebx
+imul cl
+and [rcx],rdi
+jmp [ecx]
+stc
+wait
+idiv rax
+nop
+mul dx
+jmp [esi]
+sti
+shl bl,4
+rcl bx,5
+sti
+jmp [ebp]
+lodsw
+idiv ch
+shl ecx,5
+
 adc [rbp],rcx
 clc
 call [ebp]
@@ -38,7 +64,6 @@ rdtsc
 hlt
 and ch,ch
 sub cx,2
-
 adc rcx,rdx
 imul ch
 ret

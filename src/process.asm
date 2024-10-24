@@ -1,3 +1,31 @@
+call [ebp]
+jmp [ebx]
+lock
+lahf
+std
+jmp [edi]
+inc esi
+shl al,8
+shl rbx,3
+call [edi]
+call [edi]
+rol ebx,5
+rcl ax,5
+rcr ch,2
+rcl bh,8
+add [esi],ecx
+ret
+neg dl
+call [edi]
+xor bl,bl
+xor cx,89
+rcl al,6
+rol rax,6
+dec rsi
+cmpsw
+std
+add dx,dx
+
 cld
 adc cl,cl
 shr ecx,8

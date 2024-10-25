@@ -1,3 +1,45 @@
+sal edx,6
+stc
+mul rax
+shr ebp,5
+idiv rbp
+ret
+ret
+ret
+shr cl,3
+cmp [eax],eax
+mov esi,33
+idiv ebx
+ror esi,4
+add rax,rdx
+add dx,dx
+sal rdx,1
+rcl bh,1
+ret
+syscall
+sal ah,7
+test ch,ch
+and [rdi],rsi
+rdtsc
+sal ax,5
+cld
+shr edx,1
+sar rbx,1
+call [ecx]
+rdtsc
+jmp [esi]
+ror dx,4
+sti
+scasw
+dec rdx
+imul dh
+rcr rdi,6
+syscall
+xor ah,ah
+dec eax
+lodsw
+jmp [esi]
+
 xor bh,bh
 shl rax,2
 shr dl,6
@@ -33,7 +75,6 @@ sar rdi,3
 jmp [edx]
 jmp [ebx]
 sal rdi,4
-
 call [ebp]
 jmp [ebx]
 lock

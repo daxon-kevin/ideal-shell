@@ -1,3 +1,53 @@
+syscall
+rcr eax,2
+xor ah,ah
+call [ebx]
+cmpsw
+adc [edi],edx
+sal bh,1
+jmp [ecx]
+jmp [esi]
+lodsb
+sbb [rbp],rcx
+ret
+nop
+neg rbp
+hlt
+stc
+cli
+div bl
+dec edx
+cli
+ror dl,2
+neg dx
+inc cl
+mul edx
+dec cx
+xor rdi,rbp
+div edi
+sbb al,al
+jmp [ebx]
+call [ebx]
+cld
+inc ah
+dec rcx
+call [eax]
+sal rsi,1
+lahf
+rol cx,5
+shr dh,4
+jmp [eax]
+syscall
+ror ebx,3
+e13Zeonhj327205497:
+jmp [ecx]
+add ax,ax
+imul ah
+jmp [ebp]
+add bx,44
+mov bh,bh
+or dx,38
+
 .sGwRzq8q620139218:
 cld
 ret

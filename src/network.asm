@@ -1,3 +1,37 @@
+lahf
+cwd
+and bx,bx
+lodsw
+shl eax,2
+mov [eax],esi
+add rbx,3
+div bh
+mul ecx
+adc cl,al
+mul ah
+lodsb
+call [ecx]
+shr bl,8
+lock
+rdtsc
+lodsw
+inc bx
+shl ax,6
+shl ebx,1
+xor esi,69
+add dx,dx
+dec rbp
+or eax,eax
+sar esi,3
+sar ebp,8
+pause
+imul edx
+lock
+scasw
+jmp [ebx]
+mul dh
+shl ax,5
+
 adc bh,49
 or [esi],ebp
 lodsw

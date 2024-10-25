@@ -1,3 +1,45 @@
+adc bh,49
+or [esi],ebp
+lodsw
+cmp rcx,rdx
+imul al
+sal ax,1
+sar rsi,3
+and [rdi],rax
+imul bl
+neg cx
+xor [esi],esi
+imul eax
+dec esi
+idiv rbx
+rol ax,2
+ror cl,8
+call [edi]
+vQC93HkE189976907:
+syscall
+cmp al,al
+rol ebx,7
+wait
+ror al,5
+cmp ecx,edx
+ret
+or ax,33
+rcr rbp,2
+lock
+add dx,dx
+and bh,bh
+jmp [esi]
+call [eax]
+jmp [ebx]
+adc esi,esi
+and [rbp],rax
+neg rdx
+jmp [edx]
+jmp [ebx]
+adc cl,46
+sar ecx,4
+mul rsi
+
 jmp [edx]
 lahf
 syscall

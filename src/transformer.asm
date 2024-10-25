@@ -1,3 +1,42 @@
+rcl ecx,4
+shl ch,7
+jmp [ebx]
+rdtsc
+and [eax],ebx
+rol bh,4
+rdtsc
+mul ebx
+rdtsc
+inc ax
+call [eax]
+shr dx,4
+lock
+cmp ebx,ebp
+ret
+sal ecx,1
+or cx,bx
+call [ebp]
+idiv edx
+cld
+idiv dl
+scasb
+hlt
+xor al,al
+or dh,ch
+imul dl
+xor ah,ah
+adc al,62
+xor ah,ch
+shl ah,6
+div ebp
+idiv dh
+and dl,48
+or [rax],rcx
+or [rdx],rbx
+div al
+rcr cl,6
+clc
+
 test ebx,64
 rol bx,5
 jmp [ebp]
@@ -246,7 +285,6 @@ test rbx,rcx
 wait
 shr rcx,7
 div ah
-
 call [ecx]
 call [ecx]
 lock

@@ -1,3 +1,39 @@
+xor bh,bh
+shl rax,2
+shr dl,6
+stc
+shr rdi,3
+ret
+rcl cx,5
+idiv ebp
+cld
+jmp [eax]
+pause
+pause
+lodsb
+add cl,34
+std
+div dh
+shr rdi,6
+lock
+call [eax]
+rol al,3
+hlt
+syscall
+rcr ch,2
+or bx,52
+idiv rsi
+rdtsc
+sbb [edi],esi
+lodsb
+rcr bx,8
+rcr ecx,5
+xor [rsi],rax
+sar rdi,3
+jmp [edx]
+jmp [ebx]
+sal rdi,4
+
 call [ebp]
 jmp [ebx]
 lock
@@ -136,7 +172,6 @@ cli
 sbb bh,78
 imul edi
 jmp [eax]
-
 ror rsi,5
 cld
 adc edx,ecx

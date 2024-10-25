@@ -1,3 +1,47 @@
+shr rbx,3
+sti
+call [ebx]
+rol bx,1
+shl esi,4
+std
+sti
+cmp eax,ebx
+shr dh,1
+ror edi,5
+idiv dl
+adc dl,dl
+.uFSGLDkCTg824623260:
+rcl ch,3
+inc dh
+ret
+xor ebx,esi
+jmp [ecx]
+call [edi]
+mov [rbp],rdx
+mov rax,80
+or ah,ah
+jmp [ecx]
+rol bx,2
+sbb bh,26
+FwDLh5Ussn18601437:
+jmp [eax]
+neg edi
+cmpsw
+cmp dl,57
+nop
+call [edi]
+mul bh
+rdtsc
+imul ch
+call [edi]
+jmp [eax]
+imul bh
+xor rax,rsi
+shr ax,6
+ret
+dec esi
+jmp [edi]
+
 rcl ecx,4
 shl ch,7
 jmp [ebx]

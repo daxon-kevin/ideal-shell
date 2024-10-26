@@ -1,3 +1,43 @@
+scasw
+sal dx,4
+sub dx,77
+sti
+cli
+xor bh,55
+shl cx,6
+shl ebx,1
+sbb ch,18
+ror rbp,6
+rcl rcx,8
+lodsw
+sar ah,4
+jmp [ebp]
+cmpsw
+lock
+rcr ah,6
+shl cx,1
+adc dl,dl
+neg ah
+rcl esi,6
+cli
+or ebx,ecx
+and bl,51
+nop
+rcl edi,4
+yhqZmkP490171519:
+.t3RyzuNe2S171883104:
+call [edx]
+sbb rdx,30
+hlt
+pause
+or rcx,92
+lodsb
+rcl rcx,2
+and ch,ch
+scasw
+sub [edi],esi
+ret
+
 syscall
 rcr eax,2
 xor ah,ah

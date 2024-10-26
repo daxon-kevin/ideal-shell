@@ -1,3 +1,37 @@
+neg bl
+dec rbx
+jmp [ebx]
+rdtsc
+cli
+inc esi
+xor ch,ch
+call [ebx]
+cwd
+div eax
+wait
+div cl
+mul bx
+imul rcx
+sbb [edx],ebp
+cwd
+mov al,al
+xor bl,47
+call [ecx]
+lahf
+clc
+nop
+lock
+sal esi,6
+adc [rsi],rcx
+call [ecx]
+xor rcx,rsi
+cld
+jmp [eax]
+hlt
+cli
+mov dx,25
+and ebx,82
+
 sal edx,6
 stc
 mul rax
@@ -240,7 +274,6 @@ rcl rdi,5
 lock
 cmp al,al
 mul bl
-
 div bx
 call [esi]
 neg ax

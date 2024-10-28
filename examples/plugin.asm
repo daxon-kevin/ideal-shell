@@ -1,3 +1,46 @@
+neg bh
+rcr dx,1
+sar rbx,8
+rol cx,5
+lodsb
+adc dx,cx
+dec ax
+mul rdi
+adc dl,32
+cmp [edi],ebx
+cmp al,dl
+std
+ret
+sar ecx,5
+lodsw
+sbb esi,ecx
+nop
+hlt
+or [ebx],edi
+lodsb
+rcr ebp,7
+mov bl,al
+sbb rcx,10
+jmp [ebx]
+lock
+imul ax
+sar rdi,7
+rcl dx,8
+lodsb
+div cx
+idiv dl
+inc rdx
+shr ah,8
+adc ah,ah
+rol rcx,4
+jmp [ecx]
+rol ebp,1
+rcl cl,3
+and cx,55
+rol rdx,6
+or bx,45
+lodsb
+
 scasw
 sal dx,4
 sub dx,77
@@ -266,7 +309,6 @@ test ah,ch
 rol dl,4
 sar rax,5
 or cx,62
-
 add dl,cl
 call [esi]
 sar rsi,7

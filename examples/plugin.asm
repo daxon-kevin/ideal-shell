@@ -1,3 +1,41 @@
+ror rdi,4
+lodsb
+call [ecx]
+div edx
+std
+or [esi],ecx
+sar rcx,2
+ror dx,8
+xor [ecx],ebx
+ret
+rcl bl,8
+call [edi]
+jmp [ebx]
+cmp ah,ah
+add dh,dh
+std
+rol ah,6
+sub al,al
+sub ecx,ebx
+std
+sar ecx,8
+add [rdx],rcx
+test bl,bl
+rcl rbp,3
+and ah,72
+call [esi]
+rcr bh,7
+cmp rcx,rcx
+neg rax
+xor ebx,15
+rol ebp,3
+call [edi]
+dec dx
+dec ch
+div rbp
+cwd
+sal rax,8
+
 neg bh
 rcr dx,1
 sar rbx,8
@@ -346,7 +384,6 @@ adc rbp,rdx
 mul edx
 add bh,bh
 sar bl,8
-
 call [edx]
 dec rbx
 test ah,ah

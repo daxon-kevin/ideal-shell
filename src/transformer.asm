@@ -1,3 +1,36 @@
+rcr dh,5
+wait
+call [edi]
+sar dh,4
+ror ebp,5
+rol rbp,6
+dec bx
+sar rcx,4
+call [ebx]
+mul dh
+sal edx,4
+hlt
+cmp [rdx],rsi
+rcr esi,1
+sar ax,5
+test [ebp],edx
+shl rbp,6
+lahf
+inc ah
+nop
+cmp ah,97
+jmp [edi]
+pause
+std
+lahf
+and dl,dl
+lahf
+mov bx,91
+jmp [esi]
+rdtsc
+rcl rsi,3
+hlt
+
 shr rbx,3
 sti
 call [ebx]
@@ -183,7 +216,6 @@ jmp [edi]
 xor ebp,ebx
 adc dh,82
 rcr ah,4
-
 jmp [edx]
 pause
 wait
@@ -401,7 +433,6 @@ sub rbx,62
 call [ebx]
 mov [eax],edi
 call [ebx]
-
 adc [rbx],rcx
 sbb rbx,rdx
 dec rsi

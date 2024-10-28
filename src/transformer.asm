@@ -1,3 +1,35 @@
+call [ecx]
+shl cx,1
+std
+cli
+cmpsw
+cmpsw
+xor ax,75
+rol rax,2
+sbb dh,dh
+lahf
+cld
+xor ah,dh
+cmp [esi],ebx
+nop
+sal esi,4
+dec rax
+call [edx]
+ror ebp,5
+ror dh,8
+mov al,al
+sar ah,2
+sub [rcx],rsi
+cwd
+or [ebx],ebp
+add edi,edx
+div bl
+adc al,al
+nop
+mul dx
+idiv rbx
+rcr cl,7
+
 rcr dh,5
 wait
 call [edi]

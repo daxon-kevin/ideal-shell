@@ -1,3 +1,40 @@
+lodsb
+inc ah
+rcr bl,6
+mul rbp
+inc dx
+sal dx,6
+sub ecx,19
+sub cx,bx
+lodsw
+jmp [ecx]
+sar dl,3
+lodsb
+call [ecx]
+clc
+imul rbx
+clc
+idiv eax
+lodsw
+sal rdx,2
+jmp [ebx]
+sbb ch,59
+sal rcx,2
+std
+wait
+rcl dl,3
+lahf
+shr bl,6
+shr bh,6
+sti
+wait
+imul ecx
+jmp [esi]
+rol rsi,7
+div eax
+jmp [ebx]
+sbb bl,86
+
 call [ecx]
 shl cx,1
 std
@@ -29,7 +66,6 @@ nop
 mul dx
 idiv rbx
 rcr cl,7
-
 rcr dh,5
 wait
 call [edi]

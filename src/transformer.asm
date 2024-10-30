@@ -1,3 +1,53 @@
+inc ah
+cmpsw
+and al,al
+h324288749:
+imul ch
+syscall
+sub rbp,5
+shr rax,8
+imul ebp
+mov rdi,rbp
+shl rsi,8
+test rbx,47
+jmp [ebx]
+add [rbx],rdi
+neg ecx
+neg cx
+ror ebx,4
+.JqnT67889503:
+rcr bx,2
+std
+sUw337199851:
+test rdx,79
+div edx
+and dl,7
+sub rbx,rax
+cmpsw
+clc
+jmp [edi]
+ret
+sbb dh,29
+dec rax
+rol edx,6
+rcr dh,4
+rol edx,8
+mov ecx,ebx
+cwd
+cmp ax,41
+rol esi,7
+adc cl,bl
+xor ecx,97
+shl bl,6
+xor al,2
+hlt
+pause
+jmp [ecx]
+dec dh
+hlt
+rcr ch,5
+neg eax
+
 lodsb
 inc ah
 rcr bl,6

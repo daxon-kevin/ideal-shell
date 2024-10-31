@@ -1,3 +1,38 @@
+adc bx,87
+cli
+and esi,4
+sar bh,8
+sar dh,2
+ror rdi,1
+rdtsc
+call [edi]
+sub al,7
+ror rdx,6
+cwd
+add ah,30
+call [esi]
+div edi
+cli
+pause
+stc
+std
+test [edi],edx
+lock
+rol ecx,6
+.g91024805:
+.jiK374425013:
+cwd
+lock
+jmp [ecx]
+scasw
+cmp cx,50
+inc rcx
+ror cx,6
+sar ax,4
+lodsw
+rcl rcx,6
+call [ebp]
+
 inc ah
 cmpsw
 and al,al
@@ -148,7 +183,6 @@ jmp [esi]
 rdtsc
 rcl rsi,3
 hlt
-
 shr rbx,3
 sti
 call [ebx]

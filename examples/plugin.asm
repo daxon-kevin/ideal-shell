@@ -1,3 +1,43 @@
+jmp [eax]
+idiv dh
+inc bl
+jmp [ebp]
+dec ax
+and ebp,11
+inc dl
+dec cl
+or [rdx],rsi
+jmp [edx]
+lahf
+lodsb
+sal edi,5
+neg cl
+BB9tYrp721464995:
+cwd
+pause
+call [edx]
+lodsb
+jmp [ebp]
+hlt
+hlt
+shl rbx,3
+neg dl
+clc
+test [rdx],rdi
+dec ah
+ret
+add edi,edx
+rol al,2
+cmpsw
+div dl
+and [rbp],rcx
+test [ebx],edi
+cwd
+wait
+rdtsc
+and [rax],rcx
+sub al,90
+
 ror rdi,4
 lodsb
 call [ecx]
@@ -35,7 +75,6 @@ dec ch
 div rbp
 cwd
 sal rax,8
-
 neg bh
 rcr dx,1
 sar rbx,8
@@ -168,7 +207,6 @@ jmp [ebp]
 add bx,44
 mov bh,bh
 or dx,38
-
 .sGwRzq8q620139218:
 cld
 ret
